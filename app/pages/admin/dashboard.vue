@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-slate-200 h-screen">
-    <h1>Register</h1>
+  <div>
+    <h1>dashbord</h1>
   </div>
 </template>
 
 <script setup >
 definePageMeta({
-  layout: "auth",
+  layout: "admin",
 });
 </script>
