@@ -14,16 +14,14 @@
                     <label for="password" class="block text-sm font-medium text-slate-700">Password</label>
                     <input type="password" id="password" v-model="form.password" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200" placeholder="Enter your password">
                 </div>
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <input type="checkbox" id="rememberMe" v-model="form.rememberMe" class="h-4 w-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500">
-                        <label for="rememberMe" class="ml-2 block text-sm text-slate-600">Remember me</label>
-                    </div>
-                    <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200">Forgot your password?</a>
-                </div>
+               
                 <button type="submit" :disabled="isLoading" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
                     {{ isLoading ? 'Signing in...' : 'Sign In' }}
                 </button>
+                <div class="flex items-center">
+                  Don't have an account?
+                    <NuxtLink to="/auth/signup" class="text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors duration-200">Sign up</NuxtLink>
+                </div>  
             </form>
      </div>
 
